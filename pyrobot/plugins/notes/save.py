@@ -25,7 +25,7 @@ if DB_URI is not None:
 )
 async def save_note(client, message):
     status_message = await message.reply_text(
-        "checking 🤔🙄🙄",
+        "Wait a Sec",
         quote=True
     )
     if (
@@ -55,12 +55,12 @@ async def save_note(client, message):
         )
 
         if data_type is None:
-            await status_message.edit_text("🤔 maybe note text is empty")
+            await status_message.edit_text("🤔 Maybe Note Text is Empty")
             return
 
         if not note_name:
             await status_message.edit_text(
-                "എന്തിന്ന് ഉള്ള മറുപടി ആണ് എന്ന് വ്യക്തം ആക്കിയില്ല 🤔"
+                "Not Clear 🤔"
             )
             return
 
@@ -104,4 +104,4 @@ async def save_note(client, message):
                 # f"<a href='https://'>{message.chat.title}</a>"
             )
         else:
-            await status_message.edit_text("🥺 this might be an error 🤔")
+            await status_message.edit_text("🥺 This Might be An Error 🤔")
