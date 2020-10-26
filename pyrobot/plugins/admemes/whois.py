@@ -18,7 +18,7 @@ from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 async def who_is(client, message):
     """ extract user information """
     status_message = await message.reply_text(
-        "🤔😳😳🙄"
+        "Hmm Wait Finding the Info"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -31,7 +31,7 @@ async def who_is(client, message):
         await status_message.edit(str(error))
         return
     if from_user is None:
-        await status_message.edit("no valid user_id / message specified")
+        await status_message.edit("No Valid User_ID / Message Specified")
     else:
         message_out_str = ""
         message_out_str += f"ID: <code>{from_user.id}</code>\n"
