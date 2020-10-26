@@ -41,11 +41,11 @@ async def paste_bin(_, message):
     # elif len(message.command) > 1:
     #     downloaded_file_name = " ".join(message.command[1:])
     else:
-        await status_message.edit("എന്ത് ചെയ്യണം എന്ന് പറഞ്ഞില്ല")
+        await status_message.edit("Say What to Paste !!!")
         return
 
     if downloaded_file_name is None:
-        await status_message.edit("എന്ത് ചെയ്യണം എന്ന് പറഞ്ഞില്ല")
+        await status_message.edit("Say What to Paste !!")
         return
 
     json_paste_data = {
