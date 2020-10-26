@@ -21,7 +21,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-BOT_IS_UP_TO_DATE = "the user / bot is up-to-date."
+BOT_IS_UP_TO_DATE = "I am in The Latest Version"
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "chagelog: \n\n{changelog}\n"
@@ -45,7 +45,7 @@ RESTARTING_APP = "re-starting heroku application"
     sudo_filter
 )
 async def updater(client, message):
-    status_message = await message.reply_text("🤔😳😳🙄")
+    status_message = await message.reply_text("Updating !!!")
     try:
         repo = git.Repo()
     except git.exc.InvalidGitRepositoryError as error_one:
