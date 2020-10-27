@@ -15,7 +15,7 @@ from pyrobot.helper_functions.cust_p_filters import admin_fliter
 )
 async def clear_filter(client: PyroBot, message):
     status_message = await message.reply_text(
-        "checking 🤔🙄🙄",
+        "Wait a Sec",
         quote=True
     )
     flt_name = " ".join(message.command[1:])
@@ -26,7 +26,7 @@ async def clear_filter(client: PyroBot, message):
         json.dumps(client.filterstore)
     )
     await status_message.edit_text(
-        f"filter <u>{flt_name}</u> deleted from current chat."
+        f"filter <u>{flt_name}</u> Deleted from current chat."
     )
 
 
@@ -35,7 +35,7 @@ async def clear_filter(client: PyroBot, message):
 )
 async def list_filters(client: PyroBot, message):
     status_message = await message.reply_text(
-        "checking 🤔🙄🙄",
+        "Wait a Sec,
         quote=True
     )
     flt_list = client.filterstore.get(str(message.chat.id), [])
@@ -48,7 +48,7 @@ async def list_filters(client: PyroBot, message):
             msg = ""
         msg += f"{flt_name}"
     if msg == msg_p:
-        await status_message.edit_text("ഇൗ ചാറ്റിൽ കുറിപ്പുകളൊന്നുമില്ല.")
+        await status_message.edit_text("No Notes Found In this Chat")
 
     elif len(msg) != 0:
         await message.reply_text(msg)
