@@ -22,7 +22,7 @@ from pyrobot.helper_functions.msg_types import (
 )
 async def save_filter(client: PyroBot, message):
     status_message = await message.reply_text(
-        "checking 🤔🙄🙄",
+        "Wait a Sec",
         quote=True
     )
     if (
@@ -55,12 +55,12 @@ async def save_filter(client: PyroBot, message):
         )
 
         if data_type is None:
-            await status_message.edit_text("🤔 maybe note text is empty")
+            await status_message.edit_text("🤔 Note Text is empty")
             return
 
         if not filter_kw:
             await status_message.edit_text(
-                "എന്തിന്ന് ഉള്ള മറുപടി ആണ് എന്ന് വ്യക്തം ആക്കിയില്ല 🤔"
+                "It is Not Clear 🤔"
             )
             return
 
@@ -102,8 +102,8 @@ async def save_filter(client: PyroBot, message):
             )
 
             await status_message.edit_text(
-                f"filter <u>{filter_kw}</u> added"
+                f"Filter <u>{filter_kw}</u> Added Successfully"
                 # f"<a href='https://'>{message.chat.title}</a>"
             )
         else:
-            await status_message.edit_text("🥺 this might be an error 🤔")
+            await status_message.edit_text("🥺 This Might Be an Error 🤔")
