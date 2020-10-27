@@ -27,7 +27,7 @@ async def save_note(client, message):
     if not is_admin:
         return
     status_message = await message.reply_text(
-        "checking 🤔🙄🙄",
+        "Wait Processing Ur Request .. ",
         quote=True
     )
     if len(message.command) == 2:
@@ -40,7 +40,7 @@ async def save_note(client, message):
             note_message_id
         )
         await status_message.edit_text(
-            "welcome message saved"
+            "Welcome Message Saved Successfully"
         )
     elif (
         message.reply_to_message and
@@ -59,7 +59,7 @@ async def save_note(client, message):
             note_message_id
         )
         await status_message.edit_text(
-            "welcome message saved"
+            "Welcome Message Saved Successfully"
         )
     else:
         note_name, text, data_type, content, buttons = get_note_type(
@@ -68,7 +68,7 @@ async def save_note(client, message):
         )
 
         if data_type is None:
-            await status_message.edit_text("🤔 maybe welcome text is empty")
+            await status_message.edit_text("Lol Welcome Text is Empty")
             return
 
         # construct message using the above parameters
