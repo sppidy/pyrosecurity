@@ -35,7 +35,7 @@ async def clear_filter(client: PyroBot, message):
 )
 async def list_filters(client: PyroBot, message):
     status_message = await message.reply_text(
-        "Wait a Sec.."
+        "Wait a Sec..",
         quote=True
     )
     flt_list = client.filterstore.get(str(message.chat.id), [])
