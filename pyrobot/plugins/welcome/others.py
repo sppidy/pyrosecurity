@@ -17,10 +17,10 @@ if DB_URI is not None:
 )
 async def clear_note(_, message):
     status_message = await message.reply_text(
-        "checking 🤔🙄🙄",
+        "Hmm Wait Processing Your Cmd",
         quote=True
     )
     sql.rm_welcome_setting(message.chat.id)
     await status_message.edit_text(
-        "welcome message cleared from current chat."
+        "Welcome Message Cleared From Current Chat."
     )
