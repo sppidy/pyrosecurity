@@ -20,10 +20,11 @@ class Config:
     )
     # get a Heroku API key from http://dashboard.heroku.com/account
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     # set this to your fork on GitHub (if you want)
     OFFICIAL_UPSTREAM_REPO = os.environ.get(
         "OFFICIAL_UPSTREAM_REPO",
-        "https://github.com/SpEcHiDe/PyroGramUserBot"
+        "https://github.com/sppidy/pyrosecurity"
     )
     # For Databases
     # can be None in which case plugins requiring
@@ -53,6 +54,7 @@ class Config:
         "LAYER_UPDATE_MESSAGE_CAPTION",
         None
     )
+    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
     
 class Production(Config):
     LOGGER = False
