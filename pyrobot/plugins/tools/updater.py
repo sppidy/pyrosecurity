@@ -8,7 +8,7 @@ import os
 import git
 import shutil
 import heroku3
-from pyrobot.__main__ import PyroBot
+from pyrobot.pyrobot import PyroBot
 from pyrogram import filters, Client
 from pyrogram.types import Message
 from pyrobot import (
