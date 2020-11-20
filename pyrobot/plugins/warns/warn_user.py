@@ -41,7 +41,7 @@ async def warn_user(client: PyroBot, msg: Message):
     mention += "</a>"
 
     if replied.from_user.is_self:
-        await msg.reply_text("ഞാൻ സ്വയം താക്കീത്‌ നൽകാൻ പോകുന്നില്ല")
+        await msg.reply_text("I'm not going to warn myself")
         return
 
     if await admin_check(replied):
@@ -65,7 +65,7 @@ async def warn_user(client: PyroBot, msg: Message):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton(
-            "ഈ താക്കീത്‌ നീക്കംചെയ്യുക",
+            "Remove this warn",
             callback_data=f"rmwarn_{user_id}_{msg.from_user.id}"
         )]
     ])
