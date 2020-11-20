@@ -11,9 +11,11 @@ from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 # -- Constants -- #
 ALIVE = "I am Alive 🤗😉🇮🇳."
 HELP = "CAACAgIAAxkBAAEBr9lft9h-13o3wUGoO6RvZS17X6yTVwAC9AsAAhQJwEkL-bJamWKX9h4E"
-REPO = ("Bot is Private:\n"
-        "If U Want One Like Me:\n"
-        "Check it Out:\n""https://github.com/SpEcHiDe/PyroGramBot")
+REPO = ("Bot is Public:\n"
+        "If U Want One Like Me in Malayalam:\n"
+        "Check it Out:\n""https://github.com/SpEcHiDe/PyroGramBot"
+       "If U Want One Like Me in English:\n"
+        "Check it Out:\n""https://github.com/sppidy/pyrosecurity")
 # -- Constants End -- #
 
 
