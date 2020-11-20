@@ -6,7 +6,7 @@ from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 
 RUN_STRINGS = (
     "A break into my dark life \
-    Why did you come to this race to be reminded ","
+    Why did you come to this race to be reminded ",
     "Shajietta, we have become the underworld without even knowing it ...",
     "Call me bad ... good thunder if needed ... but don't advise .....",
     "Oh bloody villagers!",
