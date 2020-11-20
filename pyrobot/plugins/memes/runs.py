@@ -36,7 +36,7 @@ RUN_STRINGS = (
     "I'll be there before the ice cubes fall on the fourth peg .....",
     "Waste of stones and wet rain that drank for her ....",
     "Tell me I love you ...",
-    "No, it's not Meenakshi from Varyampilly ... what's on a mole scooter ....""
+    "No, it's not Meenakshi from Varyampilly ... what's on a mole scooter ...."
 )
 
 
