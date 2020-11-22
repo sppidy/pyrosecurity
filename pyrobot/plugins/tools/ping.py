@@ -10,7 +10,7 @@ from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
 ALIVE = "I am Alive 🤗😉🇮🇳."
-HELP = "CAADAgAD9AsAAhQJwEn09cCjLp5DSQI"
+HELP = "CAADAQADlwADAjjRRUaJd2x43qsRFgQ"
 REPO = ("Bot is Public:\n"
         "If U Want One Like Me in Malayalam:\n"
         "Check it Out:\n""https://github.com/SpEcHiDe/PyroGramBot"
