@@ -1,8 +1,6 @@
-## This is a Clone of https://github.com/SpEcHiDe/PyroGramBot (English Version !!!)
-
 # Bot 🔥🤖
 
-A Telegram Bot ~~[still WIP, not stable]~~ based on [Pyrogram](https://github.com/pyrogram/pyrogram)
+A Stable Telegram Bot based on [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [COPYING](./COPYING) for more details.
 
